@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tilefall</title>
+<style>
+  body { font: 15px/1.4 system-ui, sans-serif; margin: 16px; background: #faf8f4; color: #222; }
+  #board { display: grid; grid-template-columns: repeat(8, 34px); gap: 3px; margin: 12px 0; }
+  .tile { width: 34px; height: 34px; border: 0; border-radius: 6px; padding: 0; cursor: pointer; }
+  .c0 { background: #2f6f8f; } .c1 { background: #c8743a; } .c2 { background: #7c9a46; }
+  .empty { background: transparent; cursor: default; }
+  .clearing { opacity: .25; }
+  #status { min-height: 1.4em; }
+</style>
+</head>
+<body>
+<h1>Tilefall</h1>
+<p>Click a group of two or more touching tiles of one colour. Tiles fall; empty columns close left.</p>
+<div id="board" data-testid="board"></div>
+<p id="status" data-testid="status"></p>
+<p>Score <b data-testid="score">0</b> <button data-testid="btn-new">New game</button></p>
+<script src="app.js"></script>
+</body>
+</html>

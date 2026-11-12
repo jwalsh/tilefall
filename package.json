@@ -1,0 +1,7 @@
+{
+  "name": "tilefall",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "description": "An original tile-clearing game built as a property-based testing target for Bombadil",
+  "devDependencies": { "@antithesishq/bombadil": "0.7.10" }
+}
